@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    margin: 50px;
+}
+.accordionBtn{
+    background-color: teal;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 18px;
+    cursor: pointer;
+    margin: 2px;
+    transition: 0.4s;
+    font-size: 22px;
+}
+.active, .accordion:hover {
+    background-color: #ccc; 
+  }
+.panels{
+    display: none;
+    text-align: justify;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panels.active {
+    height: auto;
+    padding: 10px;
+  }
+
+  /* with transition */
+.btn{
+    background-color: teal;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 18px;
+    cursor: pointer;
+    margin: 2px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+.active, .accordion:hover {
+    background-color: #ccc; 
+  }
+.pan{
+    /* display: none; */
+    text-align: justify;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+    background-image: linear-gradient(rgb(31, 53, 53), rgb(28, 63, 28));
+    border-radius: 10px;
+}
+.pan.act {
+    height: auto;
+    padding: 10px;
+  }
+  .btn::after{
+    content: '\002B';
+    float: right;
+    font-size: 25px;
+  }
+  .act::after{
+    content: "\2212";
+  }
+
+p{
+    color: rgb(255, 94, 0);
+    padding: 20px;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+/* final project */
+.container{
+  text-align: center;
+  width: 80%;
+  margin: 100px auto;
+  background-color: #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+.acc-btn{
+  width: 100%;
+  padding: 20px;
+  font-size: 25px;
+  background-image: linear-gradient(yellow, teal, green);
+  color: white;
+  font-size: bold;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+.acc-btn::after{
+  content: '\002B';
+  float: right;
+  margin-right: 20px;
+}
+.action::after{
+  content: "\2212";
+}
+.details{
+  text-align: justify;
+  color: teal;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+}
+h4{
+  padding: 10px;
+  color: rgb(70, 23, 23);
+}
+.textAction{
+  color: red;
+}
